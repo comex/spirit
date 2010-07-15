@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Spirit' target in the 'Spirit' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

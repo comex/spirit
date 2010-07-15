@@ -1,0 +1,6 @@
+run something like
+
+python config.py iPhone2,1_3.1.2
+
+before 'make'.  See ipsw/*
+

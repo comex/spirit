@@ -1,0 +1,10 @@
+bpfgen
+*.o
+*.dylib
+*.gch
+config.cflags
+config.json
+config1.cache.db
+insns.txt
+install
+map.plist

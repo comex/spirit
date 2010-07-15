@@ -1,0 +1,5 @@
+In each folder here (except FirmwareBundles, of course), put these files:
+ - kern (the kernel, decrypted)
+ - launchd
+
+Or just use ipsw.py for older firmwares.

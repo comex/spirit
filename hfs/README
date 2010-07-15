@@ -1,0 +1,3 @@
+launchd reads /var/db/.launchd_use_gmalloc before /var is actually mounted, so it's necessary for the installer to write "under" the mount.  Originally I was going to do this by manually editing HFS but I changed to a different approach.
+
+That is to say, this code is not used for anything.

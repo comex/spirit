@@ -1,0 +1,22 @@
+Spirit - a jailbreak for iPhone OS 3.1.2, 3.1.3, and 3.2
+by comex (et al.)
+
+Build Instructions:
+- Ensure you are running Mac OS X Snow Leopard. There's not a chance in hell any other OS is going to build this mess.
+-- chpwn wrote these instructions, but he is right.  this is so ugly.
+- MacPorts is required. Fink/etc are unlikely to work, even if they provide the same packages.
+- You'll need the iPhone SDK 3.2 (or later).
+- Install mingw and upx from MacPorts (for building the Win32 parts).
+- Add MobileDevice.dll and CoreFoundation.dll to winstuff/lib from a Windows iTunes installation.
+- Add "kern" (kernel) and "launchd" to each of the corresponding folders in igor/ipsw.
+- Add required (copyrighted) headers: cp -a /System/Library/Frameworks/IOSurface.framework/Versions/A/Headers igor/headers/IOSurface
+- Find the SDK: ln -s /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk /var/sdk
+- Add compilers to $PATH: export PATH=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:$PATH
+- Build it: ./fullbuild.sh
+
+Notes:
+ - Yes, this builds for Windows on OSX.
+ - Linux version: http://github.com/posixninja/spirit-linux
+ - dl (device link) is the computer-side jailbreak.
+ - The GUIs just wrap dl.
+ - igor is the iphone-side part, and probably the most interesting to examine.
